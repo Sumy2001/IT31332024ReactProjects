@@ -5,7 +5,7 @@ export default function StudentTable(props) {
 
         <div className="outerDiv">
             <div className="leftDiv">
-                <table>
+                <table border="1">
                     <thead>
                         <tr>
                             <td> First Name </td>
@@ -16,10 +16,10 @@ export default function StudentTable(props) {
                     </thead>
                     <tbody>
                         {
-                            props.students.map(student->
+                            props.students.map( student=>
                                 <tr> 
-                                    <td> (student.firstname)</td>
-                                    <td> (student.lastname) </td>
+                                    <td> (student.firstName)</td>
+                                    <td> (student.lastName) </td>
                                     <td> (student.course)  </td>
                                     <td> (student.address.country) </td>
                                 </tr>
