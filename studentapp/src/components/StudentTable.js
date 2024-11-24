@@ -8,20 +8,20 @@ export default function StudentTable(props) {
                 <table border="1">
                     <thead>
                         <tr>
-                            <td> First Name </td>
-                            <td> Last Name </td>
-                            <td> Course </td>
-                            <td> Country </td>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>Course</td>
+                            <td>Country</td>
                         </tr>
                     </thead>
                     <tbody>
                         {
                             props.students.map( student=>
                                 <tr> 
-                                    <td> (student.firstName)</td>
-                                    <td> (student.lastName) </td>
-                                    <td> (student.course)  </td>
-                                    <td> (student.address.country) </td>
+                                    <td> {student.firstName}</td>
+                                    <td> {student.lastName} </td>
+                                    <td> {student.course} </td>
+                                    <td> {student.address.country} </td>
                                 </tr>
 
                             )
