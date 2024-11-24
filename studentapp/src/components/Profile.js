@@ -1,14 +1,14 @@
 export default function Profile(props) {
     return(
         <>
-        <tablel>
+        <table>
             <tr>
                 <td rowspan={7}>
-                    <img src={require('../assests/img/1.jpg')} alt="profile picture" />
+                    <img className='profile' src={require('../assests/img/1.jpg')} alt="profile picture" />
                 </td>
-                
+                <td> ID {props.stu.studentId}</td>
             </tr>
-        </tablel>
+        </table>
         </>
     );
 }
